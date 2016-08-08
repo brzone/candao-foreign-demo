@@ -13,7 +13,7 @@ public class Req {
 	
 	private static final Gson gson = new Gson();
 	
-	public final String accessKey = RequestConstant.accessKey;
+	public final String accessKey = RequestConstant.ACCESSKEY;
 	
 	private String serviceIdName;
 	
@@ -49,7 +49,7 @@ public class Req {
 	}
 	
 	public void setSign() {
-		this.sign = Md5Util.get32MD5(accessKey + serviceIdName + RequestConstant.secret + content);;
+		this.sign = Md5Util.get32MD5(accessKey + serviceIdName + RequestConstant.SECRET + content);;
 	}
 	public int getClientType() {
 		return clientType;

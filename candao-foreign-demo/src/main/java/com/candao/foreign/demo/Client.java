@@ -38,6 +38,6 @@ public class Client {
 		//解析result即可
 		System.out.println(result);
 		
-		System.out.println("---------------------------------------------------------");
+		System.out.println("--------------------------------------------------------- ");
 	}
 }
